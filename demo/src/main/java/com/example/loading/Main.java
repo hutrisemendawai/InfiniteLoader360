@@ -92,7 +92,7 @@ class OverlayPanel extends JPanel {
         bar.setOpaque(false);
 
         // Timers for animations
-        barTimer = new Timer(40, e -> bar.repaint());
+        barTimer = new Timer(10, e -> bar.repaint());
         barTimer.start();
 
         labelTimer = new Timer(500, e -> {
